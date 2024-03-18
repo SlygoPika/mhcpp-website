@@ -7,6 +7,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MHCPP",
   description: "Montréal Heart of the City Piano Program. A program that provides free piano lessons to children in need.",
+  icons: {
+    icon: "/Logo_Transparent.png",
+    apple: "/Logo_Transparent.png",
+  },
 };
 
 export default function RootLayout({
@@ -17,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <nav className=" bg-logored">Navigation bar</nav>
+        {/* <nav className=" bg-logored">Navigation bar</nav> */}
         {children}
       </body>
     </html>
