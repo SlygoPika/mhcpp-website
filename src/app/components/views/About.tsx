@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div>
-      <h1 className=" text-center pb-12 text-2xl text-logored font-semibold">About Us</h1>
+      <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">About Us</h1>
       <p>
       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
