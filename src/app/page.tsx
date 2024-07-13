@@ -6,7 +6,7 @@ import About from "./components/views/About";
 import Button from "./components/Button";
 import Modal from "./components/Modal";
 import EmailForm from "./components/EmailForm";
-import Activites from "./components/views/Activites";
+import Activities from "./components/views/Activities";
 import Socials from "./components/views/Socials";
 import TeamPicture from "./components/TeamPicture";
 
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
         <TeamPicture />
       <div className="mx-[20%] my-24">
-        <Activites />
+        <Activities />
         <Socials />
       </div>
     </main>
