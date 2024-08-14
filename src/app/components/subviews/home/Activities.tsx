@@ -1,5 +1,5 @@
 import React from "react";
-import ActivityCard from "../ActivityCard";
+import ActivityCard from "../../ActivityCard";
 
 const Activites = () => {
     return (

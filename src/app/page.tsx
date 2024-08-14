@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 // Components
-import Hero from "./components/subviews/Hero";
-import About from "./components/subviews/About";
+import Hero from "./components/subviews/home/Hero";
+import About from "./components/subviews/home/About";
 import Button from "./components/Button";
 import Modal from "./components/Modal";
 import EmailForm from "./components/EmailForm";
-import Activities from "./components/subviews/Activities";
-import Socials from "./components/subviews/Socials";
+import Activities from "./components/subviews/home/Activities";
+import Socials from "./components/subviews/home/Socials";
 import TeamPicture from "./components/TeamPicture";
 
 export default function Home() {
