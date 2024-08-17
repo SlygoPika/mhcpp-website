@@ -20,7 +20,7 @@ export default function Youtube() {
     });
 
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between p-24">
+      <main className="flex min-h-screen flex-col items-center justify-between py-20">
         <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
         <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">Our YouTube Channel</h1>
         <p>

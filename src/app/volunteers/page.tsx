@@ -2,6 +2,7 @@
 import Link from "next/link";
 import ImageCarousel from "../components/ImageCarousel";
 import React, { useEffect, useState } from "react";
+import Button from "../components/Button";
 
 import { userLang } from "@/Config";
 
@@ -52,31 +53,77 @@ export default function Volunteers() {
   }, []);
 
     return (
-      <main className="flex min-h-screen flex-col justify-between p-24">
+      <main className="flex min-h-screen flex-col justify-between py-20">
         <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
           <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">To Our Volunteers</h1>
 
-          <div className="">
-            <h1 className="text-center sm:text-left pb-12 text-3xl text-logored font-semibold">Why Volunteer?</h1>
-            <div className="flex flex-col sm:flex-row justify-between">
-            <p>
+          <div className="mb-16">
+            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Why Volunteer?</h1>
+            <p className="text-justify">
             aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
       sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
       consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-      dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-      exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-      autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-      vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+
+      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
             </p>
-            
+            <div className="w-full flex flex-row justify-center">
+              <div className="w-4/6 h-80 m-2">
+                <ImageCarousel images={imgArray.filter((img, index) => {return index % 2 == 0})}/>
+              </div>
             </div>
           </div>
-          <div className="w-4/5 h-96 my-2">
-            <ImageCarousel images={imgArray.filter((img, index) => {return index % 2 == 0})}/>
+          <div className="mb-10">
+            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Become a Teacher</h1>
+            <p className="text-justify">
+                      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
+                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
+            </p>
+            <div className="w-full flex flex-row justify-center">
+              <a href="/volunteers/teacher">
+                <Button text="Follow Our Calendar" onClick={() => {}} />
+              </a>
             </div>
-          
+          </div>
+          <h1 className="text-center sm:text-left pb-8 text-xl text-logored font-semibold">Rough Year Calendar</h1>
+          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">September</p>
+            <p>Fall Semester Recruitment. You may register at our booth during club day</p>
+          </div>
+          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">October-November</p>
+            <p>Fall Semester Teaching</p>
+          </div>
+          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">December</p>
+            <p>Fall Semester Recital.</p>
+          </div>
+          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">January</p>
+            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
+          </div>
+          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">February-April</p>
+            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
+          </div>
+          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
+            <p className="font-bold">May</p>
+            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
+          </div>
         </div>
       </main>
     );
