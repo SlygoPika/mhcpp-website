@@ -54,7 +54,11 @@ const level3EmbedsFR : string[] = [
 
 // ------------- Not to be modified below this line -------------
 // Get user's language
-var userLang = navigator.language;
+var userLang = "en";
+if (typeof window !== 'undefined') {
+    userLang = navigator.language;
+}
+
 if (userLang.includes("fr"))
 {
     userLang = "fr";
