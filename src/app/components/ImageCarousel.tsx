@@ -14,6 +14,7 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
     autoplayDelay={8000}
     prevArrow={({ handlePrev }) => (
         <IconButton
+          placeholder={<></>}
           variant="text"
           color="black"
           size="lg"
@@ -37,7 +38,7 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
         </IconButton>
       )}
       nextArrow={({ handleNext }) => (
-        <IconButton
+        <IconButton placeholder={<></>}
           variant="text"
           color="black"
           size="lg"
@@ -61,7 +62,7 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
         </IconButton>
       )}>
       {images.map((image, index) => (
-        <div className="h-full flex flex-row justify-around">
+        <div key={index} className="h-full flex flex-row justify-around">
             <img className="h-full" src={image} key={index}/>
         </div>
       ))}

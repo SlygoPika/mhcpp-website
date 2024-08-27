@@ -15,6 +15,7 @@ export default function Home() {
     <main className="">
       <Hero />
       <div className="mx-[20%] my-24">
+        <div id="aboutus"></div>
         <About />
         <div className="my-10 grid grid-cols-2 xl:grid-cols-4 content-center">
           <div className="hidden xl:block"/>
@@ -30,8 +31,8 @@ export default function Home() {
       </div>
         <TeamPicture />
       <div className="mx-[20%] my-24">
+        <div id="activities"></div>
         <Activities />
-        <Socials />
       </div>
     </main>
   );

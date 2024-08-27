@@ -45,7 +45,7 @@ export default function Youtube() {
 
       <HorizontalRule />
 
-      <h1 className=" text-center pb-6 text-3xl text-logored font-semibold">Level 1</h1>
+      <h1 id="level1" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 1</h1>
       <p>
       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
@@ -71,7 +71,7 @@ export default function Youtube() {
 
       <HorizontalRule />
 
-      <h1 className=" text-center pb-6 text-3xl text-logored font-semibold">Level 2</h1>
+      <h1 id="level2" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 2</h1>
       <p>
       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
@@ -97,7 +97,7 @@ export default function Youtube() {
 
       <HorizontalRule />
 
-      <h1 className=" text-center pb-6 text-3xl text-logored font-semibold">Level 3</h1>
+      <h1 id="level3" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 3</h1>
       <p>
       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 

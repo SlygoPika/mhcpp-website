@@ -64,7 +64,7 @@ export default function Volunteers() {
           <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">To Our Volunteers</h1>
 
           <div className="mb-16">
-            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Why Volunteer?</h1>
+            <h1 id="whyvolunteer" className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Why Volunteer?</h1>
             <p className="text-justify">
             aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
@@ -79,13 +79,13 @@ export default function Volunteers() {
       consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
             </p>
             <div className="w-full flex flex-row justify-center">
-              <div className="w-4/6 h-80 m-2">
+              <div className="w-full lg:w-2/3 h-80 m-2">
                 <ImageCarousel images={uniqueItems(imgArray)}/>
               </div>
             </div>
           </div>
           <div className="mb-10">
-            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Become a Teacher</h1>
+            <h1 id="becometeacher" className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Become a Teacher</h1>
             <p className="text-justify">
                       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
                 totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
@@ -105,32 +105,41 @@ export default function Volunteers() {
               </a>
             </div>
           </div>
-          <h1 className="text-center sm:text-left pb-8 text-xl text-logored font-semibold">Rough Year Calendar</h1>
-          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">September</p>
-            <p>Fall Semester Recruitment. You may register at our booth during club day</p>
-          </div>
-          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">October-November</p>
-            <p>Fall Semester Teaching</p>
-          </div>
-          <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">December</p>
-            <p>Fall Semester Recital.</p>
-          </div>
-          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">January</p>
-            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
-          </div>
-          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">February-April</p>
-            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
-          </div>
-          <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-2/3 mb-4" role="alert">
-            <p className="font-bold">May</p>
-            <p>Winter Semester Recruitment. You may register at our booth during club day</p>
+          <h1 className="text-center sm:text-left pb-8 text-2xl text-logored font-semibold">Rough Year Calendar</h1>
+          <div className="w-full lg:w-2/3 grid grid-cols-2 gap-4">
+            <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">September</p>
+              <ul className="list-disc">
+                <li className="ml-6">Fall Semester <span className="text-logored font-bold">Recruitment</span>. Register at our booth during club day</li>
+                <li className="ml-6"> <span className="text-logored font-bold">Activities Night</span>. Follow <a target="_blank" href="https://www.instagram.com/ssmuaeum/" className="text-blue-600 hover:underline">SSMU</a> on instagram to be up to date.</li>
+              </ul>
+            </div>
+            <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">October-November</p>
+              <p>Fall Semester Teaching</p>
+            </div>
+            <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">December</p>
+              <p>Fall Semester Recital.</p>
+            </div>
+            <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">January</p>
+              <ul className="list-disc">
+                <li className="ml-6">Winter Semester <span className="text-logored font-bold">Recruitment</span>. Register at our booth during club day</li>
+                <li className="ml-6"> <span className="text-logored font-bold">Activities Night</span>. Follow <a target="_blank" href="https://www.instagram.com/ssmuaeum/" className="text-blue-600 hover:underline">SSMU</a> on instagram to be up to date.</li>
+              </ul>
+            </div>
+            <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">February-March</p>
+              <p>Winter Semester Teaching</p>
+            </div>
+            <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-full mb-4" role="alert">
+              <p className="font-bold">April</p>
+              <p>Winter Semester Recital</p>
+            </div>
           </div>
           <HorizontalRule />
+          <div id="contactus"></div>
           <ContactUs />
         </div>
       </main>

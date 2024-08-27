@@ -10,7 +10,7 @@ const ContactUs = () => {
                 sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
             </p>
             <ul className="list-disc mt-6">
-              <li className="ml-10"><span className="font-bold">Email:</span> mhcpp@mail.mcill.ca</li>
+              <li className="ml-10"><span className="font-bold">Email:</span> montrealhcpp@gmail.com</li>
             </ul>
           </div>
     );
