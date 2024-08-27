@@ -3,6 +3,8 @@ import Link from "next/link";
 import ImageCarousel from "../components/ImageCarousel";
 import React, { useEffect, useState } from "react";
 import Button from "../components/Button";
+import ContactUs from "../components/ContactUs";
+import HorizontalRule from "../components/HorizontalRule";
 
 import { userLang } from "@/Config";
 
@@ -94,7 +96,7 @@ export default function Volunteers() {
                 consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
             </p>
             <div className="w-full flex flex-row justify-center">
-              <a href="/volunteers/teacher">
+              <a href="/">
                 <Button text="Follow Our Calendar" onClick={() => {}} />
               </a>
             </div>
@@ -124,6 +126,8 @@ export default function Volunteers() {
             <p className="font-bold">May</p>
             <p>Winter Semester Recruitment. You may register at our booth during club day</p>
           </div>
+          <HorizontalRule />
+          <ContactUs />
         </div>
       </main>
     );
