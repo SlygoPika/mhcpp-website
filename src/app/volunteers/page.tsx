@@ -8,6 +8,10 @@ import HorizontalRule from "../components/HorizontalRule";
 
 import { userLang } from "@/Config";
 
+function uniqueItems(array: string[]) {
+  return Array.from(new Set(array));
+}
+
 export default function Volunteers() {
   const [imgArray, setImgArray] = useState<string[]>([]);
 
@@ -76,7 +80,7 @@ export default function Volunteers() {
             </p>
             <div className="w-full flex flex-row justify-center">
               <div className="w-4/6 h-80 m-2">
-                <ImageCarousel images={imgArray.filter((img, index) => {return index % 2 == 0})}/>
+                <ImageCarousel images={uniqueItems(imgArray)}/>
               </div>
             </div>
           </div>
