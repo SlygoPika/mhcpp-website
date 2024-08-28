@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import VideoEmbed from "../components/VideoEmbed";
@@ -10,9 +10,17 @@ import SocialIcon from "../components/footer/SocialIcon";
 
 import { Switch } from "@material-tailwind/react"
 
-import {userLang, level1EmbedsEN, level1EmbedsFR, level2EmbedsEN, level2EmbedsFR, level3EmbedsEN, level3EmbedsFR } from "../../Config";
+import {level1EmbedsEN, level1EmbedsFR, level2EmbedsEN, level2EmbedsFR, level3EmbedsEN, level3EmbedsFR } from "../../Config";
 
 export default function Youtube() {
+  const [userLang, setUserLang] = useState("en");
+  useEffect(() => {
+    if (userLang.includes("fr"))
+      {
+          setUserLang("fr");
+      }
+  }, []);
+
     const [levelLang, setLevelLang] = useState({
       level1: userLang,
       level2: userLang,
