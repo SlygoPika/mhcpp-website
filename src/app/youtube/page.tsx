@@ -10,7 +10,7 @@ import SocialIcon from "../components/footer/SocialIcon";
 
 import { Switch } from "@material-tailwind/react"
 
-import {level1EmbedsEN, level1EmbedsFR, level2EmbedsEN, level2EmbedsFR, level3EmbedsEN, level3EmbedsFR } from "../../Config";
+import {allText, level1EmbedsEN, level1EmbedsFR, level2EmbedsEN, level2EmbedsFR, level3EmbedsEN, level3EmbedsFR } from "../../Config";
 
 export default function Youtube() {
   const [userLang, setUserLang] = useState("en");
@@ -32,16 +32,8 @@ export default function Youtube() {
         <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
         <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">Our YouTube Channel</h1>
         <p>
-      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-      sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui 
-      dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora 
-      incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum 
-      exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis 
-      autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-      vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-      </p>
+        {allText["en"]["youtubeDescription"]}
+        </p>
 
       <div className="mt-3">
       <SocialIcon link="https://www.youtube.com/@montrealheartofthecitypian6067">
@@ -55,9 +47,7 @@ export default function Youtube() {
 
       <h1 id="level1" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 1</h1>
       <p>
-      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-      sunt explicabo.
+        {allText["en"]["level1Text"]}
       </p>
       <div>
       <Switch className="h-full w-full checked:bg-logored"
@@ -81,9 +71,7 @@ export default function Youtube() {
 
       <h1 id="level2" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 2</h1>
       <p>
-      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-      sunt explicabo.
+        {allText["en"]["level2Text"]}
       </p>
       <div>
       <Switch className="h-full w-full checked:bg-logored"
@@ -107,9 +95,7 @@ export default function Youtube() {
 
       <h1 id="level3" className=" text-center pb-6 text-3xl text-logored font-semibold">Level 3</h1>
       <p>
-      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-      totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-      sunt explicabo.
+        {allText["en"]["level3Text"]}
       </p>
       <div>
       <Switch className="h-full w-full checked:bg-logored"

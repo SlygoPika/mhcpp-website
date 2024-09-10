@@ -5,6 +5,7 @@ import ContactUs from "../components/ContactUs";
 import Button from "../components/Button";
 import HorizontalRule from "../components/HorizontalRule";
 import ImageCarousel from "../components/ImageCarousel";
+import { allText } from "@/Config";
 
 function uniqueItems(array: string[]) {
   return Array.from(new Set(array));
@@ -64,10 +65,7 @@ export default function Parents() {
               <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Resources</h1>
               <h1 className="text-center sm:text-left pb-8 text-xl text-black font-semibold">Registration</h1>
               <p className="text-justify">
-                      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                {allText["en"]["registration"]}
               </p>
 
               <div className="w-full flex flex-row justify-center">
@@ -77,10 +75,7 @@ export default function Parents() {
               </div>
               <h1 className="text-center sm:text-left py-8 text-xl text-black font-semibold">Keyboard Lending</h1>
               <p className="text-justify">
-                      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                {allText["en"]["keyboardLending"]}
               </p>
               <div className="w-full flex flex-row justify-center my-6">
                 <a href="/">
@@ -90,10 +85,7 @@ export default function Parents() {
 
               <h1 className="text-center sm:text-left pb-8 text-xl text-black font-semibold">Youtube Page</h1>
               <p className="text-justify mb-12">
-                      aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
+                {allText["en"]["youtubeParents"]}
               </p>
               <div className="w-full flex flex-row justify-center my-6">
                 <a href="/">

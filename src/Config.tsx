@@ -1,3 +1,68 @@
+// -------------------------------------- TEXT VARIABLES TO BE MODIFIED --------------------------------------
+// Home
+
+// Parents
+let registrationEN          : string;
+let registrationFR          : string;
+
+let keyboardLendingEN       : string;
+let keyboardLendingFR       : string;
+
+let youtubeParentsEN        : string;
+let youtubeParentsFR        : string;
+
+
+// Volunteer
+
+// Youtube
+let youtubeDescriptionEN    : string;
+let youtubeDescriptionFR    : string;
+
+let level1TextEN            : string;
+let level1TextFR            : string;
+
+let level2TextEN            : string;
+let level2TextFR            : string;
+
+let level3TextEN            : string;
+let level3TextFR            : string;
+
+
+// -------------------------------------- TEXT --------------------------------------
+
+// Home
+
+// Parents
+registrationEN = "Montreal Heart of the City Piano Program offers two terms of piano lessons each year: September to December and January to April. Registration takes place at the beginning of each school term. If your child attends one of our partner schools, registration forms will be distributed in class for parents or guardians to sign and return. Partner schools include Sinclair Laird, Edward Murphy, St. Gabriel’s, and Champlain."
+registrationFR = ""
+
+keyboardLendingEN = "We provide a keyboard lending program for students who are eager to practice outside of their lessons, but don’t have access to a piano. Students can borrow a keyboard for the duration of their term. To participate, simply fill out the borrowing form distributed at your child’s school, or apply directly through our website using the button below."
+keyboardLendingFR = ""
+
+youtubeParentsEN = ""
+youtubeParentsFR = ""
+
+// Volunteer
+
+// Youtube
+youtubeDescriptionEN = "Explore our MHCPP YouTube channel for a variety of piano lessons and introductory videos at different skill levels. It’s a great way to get acquainted with the piano and to see if our program is the right fit for your child! Go through each level by using the arrows on the sides of the videos, and switch between french and english using the slider."
+youtubeDescriptionFR = ""
+
+level1TextEN = "If this is your very first time playing the piano, this is the level for you! We will be taking you through all the basics like sitting with proper posture, learning the name of the notes on the piano, as well as introducing concepts such as rhythm and clefs."
+level1TextFR = ""
+
+level2TextEN = "At this level, students will be expected to be familiar with the white note names on the piano, and begin to progress towards reading simple melodies and playing them. New technical skills will also be developed, such as learning to play scales and triads. Some optional ear training will also be available for those who may be interested in developing their listening as well."
+level2TextFR = ""
+
+level3TextEN = "In Level 3, students will begin to add variations in tempo and articulations to their playing, as well as become even more familiar with reading the musical staff."
+level3TextFR = ""
+
+// -------------------------------------- OTHER VARIABLES --------------------------------------
+const instagramLink         = "";
+const facebookLink          = "";
+const youtubeChannelLink    = "";
+const linkedinLink          = "";
+
 // Embedded links for all videos in the MHCPP youtube playlist "Level 1 | MHCPP"
 const level1EmbedsEN : string[] = [
     "https://www.youtube.com/embed/Z3InsUjXhw0?si=NZqrnhNuh7JLWzen",
@@ -68,5 +133,25 @@ else
     userLang = "en";
 }
 
+let allText = {
+    "en": {
+        "registration": registrationEN,
+        "keyboardLending": keyboardLendingEN,
+        "youtubeParents": youtubeParentsEN,
+        "youtubeDescription": youtubeDescriptionEN,
+        "level1Text": level1TextEN,
+        "level2Text": level2TextEN,
+        "level3Text": level3TextEN
+    },
+    "fr": {
+        "registration": registrationFR,
+        "keyboardLending": keyboardLendingFR,
+        "youtubeParents": youtubeParentsFR,
+        "youtubeDescription": youtubeDescriptionFR,
+        "level1Text": level1TextFR,
+        "level2Text": level2TextFR,
+        "level3Text": level3TextFR
+    }
+}
 
-export { userLang, level1EmbedsEN, level2EmbedsEN, level3EmbedsEN, level1EmbedsFR, level2EmbedsFR, level3EmbedsFR };
+export { allText, userLang, level1EmbedsEN, level2EmbedsEN, level3EmbedsEN, level1EmbedsFR, level2EmbedsFR, level3EmbedsFR };
