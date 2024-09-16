@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
 import Link from "next/link";
 import {
     Menu,
@@ -16,10 +16,14 @@ type NavBarLinkProps = {
 };
 
 const NavBarLink : FunctionComponent<NavBarLinkProps>= ({ href, sections, children }) => {
+    const [openMenu, setOpenMenu] = useState(false);
+
     return (
-        <div className="transition ease-in-out duration-300 hover:bg-red-900 rounded-lg grow justify-center">
+        <div onMouseOut={() => setOpenMenu(false)} className="transition ease-in-out duration-300 hover:bg-red-900 rounded-lg grow justify-center">
             {sections != null ? (
                 <Menu allowHover
+                    open={openMenu}
+                    handler={setOpenMenu}
                   animate={{
                     mount: { y: 0 },
                     unmount: { y: 25 },

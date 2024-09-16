@@ -1,10 +1,17 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import ActivityCard from "./ActivityCard";
 
-const Activites = () => {
+import { allText, allHeadings } from "@/Config";
+
+type ActivitiesProps = {
+  lang: string;
+};
+const Activites : FunctionComponent<ActivitiesProps> = ({lang}) => {
     return (
         <div>
-        <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">What we do</h1>
+        <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">
+            {allHeadings[lang == "en" ? "en" : "fr"]["activities"]}
+        </h1>
         <div className="flex flex-wrap justify-center items-center">
             {/* <ActivityCard />
             <ActivityCard />

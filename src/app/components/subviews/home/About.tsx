@@ -1,9 +1,16 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
+import { allText, allHeadings } from "@/Config";
 
-export default function About() {
+type AboutUsProps = {
+  lang: string;
+};
+
+const About : FunctionComponent<AboutUsProps> = ({lang}) => {
   return (
     <div>
-      <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">About Us</h1>
+      <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">
+        {allHeadings[lang == "en" ? "en" : "fr"]["aboutUs"]}
+      </h1>
       <p>
       aaSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
       totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
@@ -18,3 +25,5 @@ export default function About() {
     </div>
   );
 }
+
+export default About;

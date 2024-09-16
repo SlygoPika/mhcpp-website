@@ -113,8 +113,9 @@ export default function Parents() {
               
             </div>
             <HorizontalRule />
-            <div id="contactus"></div>
-            <ContactUs />
+            <div id="contactus" className="w-full">
+              <ContactUs lang={userLang} />
+            </div>
         </div>
 
       </main> 

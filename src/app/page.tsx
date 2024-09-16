@@ -1,3 +1,5 @@
+"use client"
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 // Components
@@ -13,12 +15,20 @@ import TeamPicture from "./components/TeamPicture";
 import { allText, allHeadings, allLinks } from "@/Config";
 
 export default function Home() {
+  const [userLang, setUserLang] = useState("en");
+  useEffect(() => {
+    if (navigator.language.includes("fr"))
+      {
+          setUserLang("fr");
+      }
+  }, []);
+
   return (
     <main className="">
-      <Hero />
+      <Hero lang={userLang} />
       <div className="mx-[20%] my-24">
         <div id="aboutus"></div>
-        <About />
+        <About lang={userLang}/>
         <div className="my-10 grid grid-cols-2 xl:grid-cols-4 content-center">
           <div className="hidden xl:block"/>
           <div className="flex justify-center">
@@ -36,7 +46,7 @@ export default function Home() {
         <TeamPicture />
       <div className="mx-[20%] my-24">
         <div id="activities"></div>
-        <Activities />
+        <Activities lang={userLang}/>
       </div>
     </main>
   );

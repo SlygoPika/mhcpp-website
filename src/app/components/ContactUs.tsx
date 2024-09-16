@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { FunctionComponent } from "react";
+import { allText, allHeadings, allLinks } from "@/Config";
 
-const ContactUs = () => {
+type ContactUsProps = {
+  lang: string;
+};
+
+
+const ContactUs : FunctionComponent<ContactUsProps> = ({lang}) => {
     return (
         <div className="my-10">
-            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Contact Information</h1>
+            <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">
+              {allHeadings[lang == "en" ? "en" : "fr"]["contactUsParents"]}
+            </h1>
             <p className="text-justify">
-              We’re here to help! If you have any questions, feel free to reach out to us via email.
+              {allText[lang == "en" ? "en" : "fr"]["contactUsParents"]}
             </p>
             <ul className="list-disc mt-6">
-              <li className="ml-10"><span className="font-bold">Email:</span> montrealhcpp@gmail.com</li>
+              <li className="ml-10"><span className="font-bold">Email:</span> {allLinks["emailContact"]}</li>
             </ul>
           </div>
     );

@@ -86,6 +86,9 @@ let keyboardLendingFR       : string;
 let youtubeParentsEN        : string;
 let youtubeParentsFR        : string;
 
+let contactUsParentsEN      : string;
+let contactUsParentsFR      : string;
+
 
 // Volunteer
 
@@ -117,6 +120,9 @@ keyboardLendingFR = "Nous avons un programme de prêt de claviers pour les élè
 youtubeParentsEN = ""
 youtubeParentsFR = ""
 
+contactUsParentsEN = "We’re here to help! If you have any questions, feel free to reach out to us via email."
+contactUsParentsFR = "Il nous fait plaisir de vous aider! Si vous avez des questions, n’hésitez pas à nous rejoindre par courriel."
+
 // Volunteer
 
 // Youtube
@@ -139,6 +145,7 @@ const youtubeChannelLink    = "https://www.youtube.com/@montrealheartofthecitypi
 const linkedinLink          = "https://www.linkedin.com/company/montreal-heart-of-the-city-piano-program/";
 const keyboardApplication   = "";
 const volunteerApplication  = "https://docs.google.com/forms/d/e/1FAIpQLSdkhiBbFsQUPPhuMqshDQOwBzOuY2CMR93hIyvSjxkMA-Z1Pw/viewform?usp=share_link";
+const emailContact          = "montrealhcpp@gmail.com";
 
 // Embedded links for all videos in the MHCPP youtube playlist "Level 1 | MHCPP"
 const level1EmbedsEN : string[] = [
@@ -202,7 +209,8 @@ let allLinks = {
     "youtube": youtubeChannelLink,
     "linkedin": linkedinLink,
     "keyboardApplication": keyboardApplication,
-    "volunteerApplication": volunteerApplication
+    "volunteerApplication": volunteerApplication,
+    "emailContact": emailContact
 }
 
 let allHeadings = {
@@ -270,7 +278,8 @@ let allText = {
         "youtubeDescription": youtubeDescriptionEN,
         "level1Text": level1TextEN,
         "level2Text": level2TextEN,
-        "level3Text": level3TextEN
+        "level3Text": level3TextEN,
+        "contactUsParents": contactUsParentsEN
     },
     "fr": {
         "registration": registrationFR,
@@ -279,7 +288,8 @@ let allText = {
         "youtubeDescription": youtubeDescriptionFR,
         "level1Text": level1TextFR,
         "level2Text": level2TextFR,
-        "level3Text": level3TextFR
+        "level3Text": level3TextFR,
+        "contactUsParents": contactUsParentsFR
     }
 }
 
