@@ -10,6 +10,8 @@ import Activities from "./components/subviews/home/Activities";
 import Socials from "./components/subviews/home/Socials";
 import TeamPicture from "./components/TeamPicture";
 
+import { allText, allHeadings, allLinks } from "@/Config";
+
 export default function Home() {
   return (
     <main className="">
@@ -20,7 +22,9 @@ export default function Home() {
         <div className="my-10 grid grid-cols-2 xl:grid-cols-4 content-center">
           <div className="hidden xl:block"/>
           <div className="flex justify-center">
-            <Button text="Become a Volunteer" />
+            <a target="_blank" href={allLinks["volunteerApplication"]}>
+              <Button text="Become a Volunteer" />
+            </a>
           </div>
           <div className="flex justify-center">
             <Modal buttonText="Sponsor MHCPP">

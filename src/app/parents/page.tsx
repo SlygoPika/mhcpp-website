@@ -5,13 +5,21 @@ import ContactUs from "../components/ContactUs";
 import Button from "../components/Button";
 import HorizontalRule from "../components/HorizontalRule";
 import ImageCarousel from "../components/ImageCarousel";
-import { allText } from "@/Config";
+import { allText, allHeadings, allLinks } from "@/Config";
 
 function uniqueItems(array: string[]) {
   return Array.from(new Set(array));
 }
 
 export default function Parents() {
+  const [userLang, setUserLang] = useState("en");
+    useEffect(() => {
+    if (navigator.language.includes("fr"))
+      {
+          setUserLang("fr");
+      }
+    }, []);
+
   const [imgArray, setImgArray] = useState<string[]>([]);
 
   useEffect(() => {
@@ -60,12 +68,18 @@ export default function Parents() {
     return (
       <main className="flex min-h-screen flex-col justify-between py-20">
         <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
-          <h1 id="resources" className=" text-center pb-12 text-4xl text-logored font-semibold">To Parents</h1>
+          <h1 id="resources" className=" text-center pb-12 text-4xl text-logored font-semibold">
+            {allHeadings[userLang == "en" ? "en" : "fr"]["parents"]}
+          </h1>
           <div className="mb-16">
-              <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">Resources</h1>
-              <h1 className="text-center sm:text-left pb-8 text-xl text-black font-semibold">Registration</h1>
+              <h1 className="text-center sm:text-left pb-8 text-3xl text-logored font-semibold">
+                {allHeadings[userLang == "en" ? "en" : "fr"]["resources"]}
+              </h1>
+              <h1 className="text-center sm:text-left pb-6 text-xl text-black font-semibold">
+                {allHeadings[userLang == "en" ? "en" : "fr"]["registration"]}
+              </h1>
               <p className="text-justify">
-                {allText["en"]["registration"]}
+                {allText[userLang == "en" ? "en" : "fr"]["registration"]}
               </p>
 
               <div className="w-full flex flex-row justify-center">
@@ -73,24 +87,28 @@ export default function Parents() {
                   <ImageCarousel images={uniqueItems(imgArray)}/>
                 </div>
               </div>
-              <h1 className="text-center sm:text-left py-8 text-xl text-black font-semibold">Keyboard Lending</h1>
+              <h1 className="text-center sm:text-left pt-8 pb-6 text-xl text-black font-semibold">
+                {allHeadings[userLang == "en" ? "en" : "fr"]["keyboard"]}
+              </h1>
               <p className="text-justify">
-                {allText["en"]["keyboardLending"]}
+                {allText[userLang == "en" ? "en" : "fr"]["keyboardLending"]}
               </p>
               <div className="w-full flex flex-row justify-center my-6">
-                <a href="/">
+                <a target="_blank" href={allLinks["keyboardApplication"]}>
                   <Button text="Apply for Keyboard" onClick={() => {}} />
                 </a>
               </div>
 
-              <h1 className="text-center sm:text-left pb-8 text-xl text-black font-semibold">Youtube Page</h1>
+              <h1 className="text-center sm:text-left pt-8 pb-6 text-xl text-black font-semibold">
+                {allHeadings[userLang == "en" ? "en" : "fr"]["youtubeParents"]}
+              </h1>
               <p className="text-justify mb-12">
-                {allText["en"]["youtubeParents"]}
+                {allText[userLang == "en" ? "en" : "fr"]["youtubeParents"]}
               </p>
               <div className="w-full flex flex-row justify-center my-6">
-                <a href="/">
+                <Link href="/youtube">
                   <Button text="Check out our Youtube" onClick={() => {}} />
-                </a>
+                </Link>
               </div>
               
             </div>
