@@ -15,7 +15,7 @@ import {allText, level1EmbedsEN, level1EmbedsFR, level2EmbedsEN, level2EmbedsFR,
 export default function Youtube() {
   const [userLang, setUserLang] = useState("en");
   useEffect(() => {
-    if (userLang.includes("fr"))
+    if (navigator.language.includes("fr"))
       {
           setUserLang("fr");
       }
