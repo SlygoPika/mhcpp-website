@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import ContactUs from "../components/ContactUs";
 import HorizontalRule from "../components/HorizontalRule";
 import { allText, allHeadings, roughCalendar } from "@/Config";
+import { randomInt } from "crypto";
 
 function uniqueItems(array: string[]) {
   return Array.from(new Set(array));
@@ -68,7 +69,7 @@ export default function Volunteers() {
   function highlightText(text: any, highlight: string) {
     let textarr = text.split(highlight);
 
-    return [textarr[0], <span className="text-logored font-bold">{highlight}</span>, textarr[1]];
+    return [textarr[0], <span key={Math.random() * 99999} className="text-logored font-bold">{highlight}</span>, textarr[1]];
   }
 
 
