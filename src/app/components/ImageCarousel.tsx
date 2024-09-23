@@ -1,6 +1,7 @@
 "use client"
 import React, { FunctionComponent } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
+import Image from "next/image";
 
 type ImageCarouselProps = {
   images: string[];
@@ -63,7 +64,8 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
       )}>
       {images.map((image, index) => (
         <div key={index} className="h-full flex flex-row justify-around">
-            <img className="h-full" src={image} key={index}/>
+            <Image loader={() => image} src={image} width={500} height={500} alt={"Couldn't find " + image} layout="intrinsic"/>
+            {/* <img className="h-full" src={image} key={index}/> */}
         </div>
       ))}
     </Carousel>

@@ -65,7 +65,7 @@ export default function Youtube() {
         level3: levelLang.level3
       })} />
       </div>
-      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
+      <div className="w-full h-56 md:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level1 == "en" ? level1EmbedsEN : level1EmbedsFR}/>
       </div>
 
@@ -91,7 +91,7 @@ export default function Youtube() {
         level3: levelLang.level3
       })} />
       </div>
-      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
+      <div className="w-full h-56 md:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level2 == "en" ? level2EmbedsEN : level2EmbedsFR}/>
       </div>
 
@@ -117,7 +117,7 @@ export default function Youtube() {
         level3: levelLang.level3 == "en" ? "fr" : "en"
       })} />
       </div>
-      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
+      <div className="w-full h-56 md:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level3 == "en" ? level3EmbedsEN : level3EmbedsFR}/>
       </div>
         </div>

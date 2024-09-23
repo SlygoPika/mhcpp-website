@@ -19,7 +19,7 @@ const NavBarLink : FunctionComponent<NavBarLinkProps>= ({ href, sections, childr
     const [openMenu, setOpenMenu] = useState(false);
 
     return (
-        <div onMouseOut={() => setOpenMenu(false)} className="transition ease-in-out duration-300 hover:bg-red-900 rounded-lg grow justify-center">
+        <div onMouseLeave={() => setOpenMenu(false)} className="transition ease-in-out duration-300 hover:bg-red-900 rounded-lg grow justify-center">
             {sections != null ? (
                 <Menu allowHover
                     open={openMenu}
@@ -34,7 +34,9 @@ const NavBarLink : FunctionComponent<NavBarLinkProps>= ({ href, sections, childr
                         <p className="text-lightred py-3 text-lg font-medium text-center">{children}</p>
                     </Link>
                 </MenuHandler>
-                    <MenuList placeholder={<></>} className="w-1/5 bg-logored/65 p-0 border-transparent">
+                    <MenuList onMouseOver={() => {
+                        setOpenMenu(true)
+                        }} placeholder={<></>} className="w-1/5 bg-logored/65 p-0 border-transparent">
                         {sections.map((section, index) => (
                             <MenuItem placeholder={<></>} key={index} className="text-lightred text-base font-medium bg-logored/0 m-0 rounded-none focus:bg-red-900 focus:text-lightred">
                                 <Link href={`${href}#${section[1]}`} >

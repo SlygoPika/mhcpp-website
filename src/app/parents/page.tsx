@@ -29,7 +29,7 @@ export default function Parents() {
     var img : HTMLImageElement;
     var i = 1;
 
-    var myInterval = setInterval(loadImage, 1);
+    var myInterval = setInterval(loadImage, 10);
 
     function loadImage() {
 
@@ -83,7 +83,7 @@ export default function Parents() {
               </p>
 
               <div className="w-full flex flex-row justify-center">
-                <div className="w-full sm:w-4/6 h-60 sm:h-80 m-2">
+                <div className="w-full lg:w-4/6 h-60 md:h-80 m-2">
                   <ImageCarousel images={uniqueItems(imgArray)}/>
                 </div>
               </div>

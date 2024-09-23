@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from "react";
 import { allHeadings } from "@/Config";
-import styles from './Hero.module.css'
+import Image from 'next/image'
 
 type HeroProps = {
   lang: string;
@@ -17,7 +17,13 @@ const Hero : FunctionComponent<HeroProps> = ({lang}) => {
                 <h1 className=' mx-10 sm:mr-36 text-center sm:text-left sm:w-1/3 text-5xl uppercase subpixel-antialiased'>
                 {allHeadings[lang == "en" ? "en" : "fr"]["home"]}
                 </h1>
-                <img src="Logo_Transparent.png" alt="Logo" className="w-1/5 min-w-48" />
+                <Image
+                src="/Logo_Transparent.png"
+                alt="Logo"
+                width={200}
+                height={200}
+                className="z-30 w-1/5 min-w-48"
+                />
             </section>
         </div>
     </div>
