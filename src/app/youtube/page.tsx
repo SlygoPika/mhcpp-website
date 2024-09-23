@@ -28,8 +28,8 @@ export default function Youtube() {
     });
 
     return (
-      <main className="flex min-h-screen flex-col items-center justify-between py-20">
-        <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
+      <main className="flex min-h-screen flex-col justify-between py-20">
+        <div className="flex min-h-screen flex-col items-center mx-[10%] sm:mx-[20%] mt-16 mb-12">
         <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">{allHeadings[userLang == "en" ? "en" : "fr"]["youtube"]}</h1>
         <p>
         {allText[userLang == "en" ? "en" : "fr"]["youtubeDescription"]}
@@ -65,7 +65,7 @@ export default function Youtube() {
         level3: levelLang.level3
       })} />
       </div>
-      <div className="w-4/5 h-96 my-2">
+      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level1 == "en" ? level1EmbedsEN : level1EmbedsFR}/>
       </div>
 
@@ -91,7 +91,7 @@ export default function Youtube() {
         level3: levelLang.level3
       })} />
       </div>
-      <div className="w-4/5 h-96 my-2">
+      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level2 == "en" ? level2EmbedsEN : level2EmbedsFR}/>
       </div>
 
@@ -117,7 +117,7 @@ export default function Youtube() {
         level3: levelLang.level3 == "en" ? "fr" : "en"
       })} />
       </div>
-      <div className="w-4/5 h-96 my-2">
+      <div className="w-full h-56 sm:w-4/5 md:h-72 lg:h-96 my-2">
       <VideoCarousel embedLinks={levelLang.level3 == "en" ? level3EmbedsEN : level3EmbedsFR}/>
       </div>
         </div>

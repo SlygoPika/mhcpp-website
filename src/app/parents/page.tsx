@@ -67,7 +67,7 @@ export default function Parents() {
 
     return (
       <main className="flex min-h-screen flex-col justify-between py-20">
-        <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
+        <div className="flex min-h-screen flex-col items-center mx-[10%] sm:mx-[20%] mt-16 mb-12">
           <h1 id="resources" className=" text-center pb-12 text-4xl text-logored font-semibold">
             {allHeadings[userLang == "en" ? "en" : "fr"]["parents"]}
           </h1>
@@ -83,7 +83,7 @@ export default function Parents() {
               </p>
 
               <div className="w-full flex flex-row justify-center">
-                <div className="w-4/6 h-80 m-2">
+                <div className="w-full sm:w-4/6 h-60 sm:h-80 m-2">
                   <ImageCarousel images={uniqueItems(imgArray)}/>
                 </div>
               </div>

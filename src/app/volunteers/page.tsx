@@ -75,7 +75,7 @@ export default function Volunteers() {
 
     return (
       <main className="flex min-h-screen flex-col justify-between py-20">
-        <div className="flex min-h-screen flex-col items-center mx-[20%] mt-16 mb-12">
+        <div className="flex min-h-screen flex-col items-center mx-[10%] sm:mx-[20%] mt-16 mb-12">
           <h1 className=" text-center pb-12 text-4xl text-logored font-semibold">
             {allHeadings[userLang == "en" ? "en" : "fr"]["volunteers"]}
           </h1>
@@ -88,7 +88,7 @@ export default function Volunteers() {
               {allText[userLang == "en" ? "en" : "fr"]["whyVolunteer"]}
             </p>
             <div className="w-full flex flex-row justify-center">
-              <div className="w-full lg:w-2/3 h-80 m-2">
+              <div className="w-full sm:w-4/6 h-60 sm:h-80 m-2">
                 <ImageCarousel images={uniqueItems(imgArray)}/>
               </div>
             </div>
@@ -109,7 +109,7 @@ export default function Volunteers() {
           <h1 className="text-center sm:text-left pb-8 text-2xl text-logored font-semibold">
             {allHeadings[userLang == "en" ? "en" : "fr"]["roughCalendar"]}
           </h1>
-          <div className="w-full lg:w-2/3 grid grid-cols-2 gap-4">
+          <div className="w-full lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-orange-50 border-l-4 border-orange-500 text-black p-4 w-full mb-4" role="alert">
               <p className="font-bold">
                 {userLang == "en" ? "September" : "Septembre"}
