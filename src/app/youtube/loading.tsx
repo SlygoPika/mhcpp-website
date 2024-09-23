@@ -1,5 +1,7 @@
 export default function Loading() {
     return (
-        <h1>Loading...</h1>
+        <div className="h-[100vh]">
+            <h1>Loading...</h1>
+        </div>
     );
     }
