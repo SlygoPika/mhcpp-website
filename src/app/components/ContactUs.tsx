@@ -16,7 +16,7 @@ const ContactUs : FunctionComponent<ContactUsProps> = ({lang}) => {
               {allText[lang == "en" ? "en" : "fr"]["contactUsParents"]}
             </p>
             <ul className="list-disc mt-6">
-              <li className="ml-10"><span className="font-bold">Email:</span> {allLinks["emailContact"]}</li>
+              <li className="ml-10"><span className="font-bold">{lang == "en" ? "Email:" : "Courriel:"}</span> {allLinks["emailContact"]}</li>
             </ul>
           </div>
     );

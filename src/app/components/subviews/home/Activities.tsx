@@ -13,15 +13,15 @@ const Activites : FunctionComponent<ActivitiesProps> = ({lang}) => {
             {allHeadings[lang == "en" ? "en" : "fr"]["activities"]}
         </h1>
         <div className="flex flex-wrap justify-center items-center">
-            {/* <ActivityCard />
-            <ActivityCard />
-            <ActivityCard />
-            <ActivityCard /> */}
             <div className="mx-4">
-            <ActivityCard image="/ActivitiesNight.jpg" title="Activities Night" description="A night of fun and games for students to relax and have fun." />
+            <ActivityCard image="/ActivitiesNight.jpg" 
+            title={allHeadings[lang == "en" ? "en" : "fr"]["activitiesNight"]} 
+            description={allText[lang == "en" ? "en" : "fr"]["activitiesNight"]} />
             </div>
             <div className="mx-4">
-            <ActivityCard image="/RecitalPicture.jpg" title="End of Semester Recital" description="At the end of every teaching semester, a fun, low-stake recital is hosted to show off what students have learned." />
+            <ActivityCard image="/RecitalPicture.jpg" 
+            title={allHeadings[lang == "en" ? "en" : "fr"]["semesterRecital"]} 
+            description={allText[lang == "en" ? "en" : "fr"]["semesterRecital"]} />
             </div>
         </div>
         </div>

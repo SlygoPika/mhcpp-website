@@ -28,12 +28,15 @@ const ActivityCard : FunctionComponent<ActivityCardProps> = ({title, description
           />
         </CardHeader>
         <CardBody placeholder={<></>}>
-          <p className="text-xl text-logored font-semibold">
+          <p className="text-xl text-logored font-semibold mb-3">
             {title}
           </p>
-          <Typography placeholder={<></>} variant="lead" color="gray" className="mt-3 font-normal">
+          {/* <Typography placeholder={<></>} variant="lead" color="gray" className="mt-3 font-normal">
             {description}
-          </Typography>
+          </Typography> */}
+          <p className="text-black">
+            {description}
+          </p>
         </CardBody>
       </Card>
     );

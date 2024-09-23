@@ -33,13 +33,19 @@ export default function Home() {
           <div className="hidden xl:block"/>
           <div className="flex justify-center">
             <a target="_blank" href={allLinks["volunteerApplication"]}>
-              <Button text="Become a Volunteer" />
+              <Button text={
+                userLang == "en" ? "Become a Volunteer" : "Devenir un bénévole"
+              } />
             </a>
           </div>
           <div className="flex justify-center">
-            <Modal buttonText="Sponsor MHCPP">
-              <EmailForm />
-            </Modal>
+            <a target="_blank" href={"mailto:" + allLinks["emailFinance"] + 
+              "?subject=Sponsorship Oppurtunity&cc=" + allLinks["emailContact"]}>
+              <Button 
+              text={
+                userLang == "en" ? "Become a Sponsor" : "Devenir un sponsor"
+              } />
+            </a>
           </div>
         </div>
       </div>

@@ -93,11 +93,6 @@ export default function Parents() {
               <p className="text-justify">
                 {allText[userLang == "en" ? "en" : "fr"]["keyboardLending"]}
               </p>
-              <div className="w-full flex flex-row justify-center my-6">
-                <a target="_blank" href={allLinks["keyboardApplication"]}>
-                  <Button text="Apply for Keyboard" onClick={() => {}} />
-                </a>
-              </div>
 
               <h1 className="text-center sm:text-left pt-8 pb-6 text-xl text-black font-semibold">
                 {allHeadings[userLang == "en" ? "en" : "fr"]["youtubeParents"]}
@@ -107,7 +102,8 @@ export default function Parents() {
               </p>
               <div className="w-full flex flex-row justify-center my-6">
                 <Link href="/youtube">
-                  <Button text="Check out our Youtube" onClick={() => {}} />
+                  <Button text={userLang == "en" ? "Check out our YouTube" : "Visitez notre chaîne"}
+                  onClick={() => {}} />
                 </Link>
               </div>
               
