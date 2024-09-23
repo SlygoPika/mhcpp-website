@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="">
       <Hero lang={userLang} />
-      <div className="mx-[20%] my-24">
+      <div className="mx-[10%] sm:mx-[20%] my-24">
         <div id="aboutus"></div>
         <About lang={userLang}/>
         <div className="my-10 grid grid-cols-2 xl:grid-cols-4 content-center">
@@ -50,7 +50,7 @@ export default function Home() {
         </div>
       </div>
         <TeamPicture />
-      <div className="mx-[20%] my-24">
+      <div className="mx-[10%] sm:mx-[20%] my-24">
         <div id="activities"></div>
         <Activities lang={userLang}/>
       </div>

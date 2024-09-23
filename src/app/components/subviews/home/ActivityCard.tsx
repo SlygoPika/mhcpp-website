@@ -15,7 +15,7 @@ type ActivityCardProps = {
 
 const ActivityCard : FunctionComponent<ActivityCardProps> = ({title, description, image}) => {
     return (
-      <Card placeholder={<></>} className="max-w-[22rem] overflow-hidden">
+      <Card placeholder={<></>} className=" min-w-[16rem] sm:max-w-[22rem] overflow-hidden">
         <CardHeader placeholder={<></>}
           floated={false}
           shadow={false}

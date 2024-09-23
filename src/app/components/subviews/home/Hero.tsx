@@ -12,12 +12,12 @@ const Hero : FunctionComponent<HeroProps> = ({lang}) => {
   return (
     <div className=" bg-black/[.9] text-white relative z-0">
         <img src="/SpringConcert1.jpg" alt="Spring Concert" className="w-full h-full object-cover absolute opacity-20 blur-sm"/>
-        <div className='z-10 h-[66vh]'>
-            <section className={styles.bg}>
-                <h1 className=' mr-36 text-left w-1/3 text-5xl uppercase subpixel-antialiased hover:italic'>
+        <div className='z-10 h-[100vh] sm:h-[66vh]'>
+            <section className="p-20 h-full flex justify-center items-center text-center flex-wrap sm:flex-nowrap">
+                <h1 className=' mx-10 sm:mr-36 text-center sm:text-left sm:w-1/3 text-5xl uppercase subpixel-antialiased'>
                 {allHeadings[lang == "en" ? "en" : "fr"]["home"]}
                 </h1>
-                <img src="Logo_Transparent.png" alt="Logo" width="20%" />
+                <img src="Logo_Transparent.png" alt="Logo" className="w-1/5 min-w-48" />
             </section>
         </div>
     </div>

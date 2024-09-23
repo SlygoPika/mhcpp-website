@@ -12,13 +12,13 @@ const Activites : FunctionComponent<ActivitiesProps> = ({lang}) => {
         <h1 className=" text-center pb-12 text-3xl text-logored font-semibold">
             {allHeadings[lang == "en" ? "en" : "fr"]["activities"]}
         </h1>
-        <div className="flex flex-wrap justify-center items-center">
-            <div className="mx-4">
+        <div className="flex flex-wrap md:flex-nowrap justify-center items-center">
+            <div className="m-4">
             <ActivityCard image="/ActivitiesNight.jpg" 
             title={allHeadings[lang == "en" ? "en" : "fr"]["activitiesNight"]} 
             description={allText[lang == "en" ? "en" : "fr"]["activitiesNight"]} />
             </div>
-            <div className="mx-4">
+            <div className="m-4">
             <ActivityCard image="/RecitalPicture.jpg" 
             title={allHeadings[lang == "en" ? "en" : "fr"]["semesterRecital"]} 
             description={allText[lang == "en" ? "en" : "fr"]["semesterRecital"]} />

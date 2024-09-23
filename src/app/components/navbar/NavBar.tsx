@@ -15,7 +15,7 @@ const NavBar = () => {
 
     return (
         <nav className="bg-gradient-to-r from-logored/50 to-orange-900/50 absolute left-0 right-0 z-10">
-            <div className="mx-[15%] max-w-screen-xl flex flex-wrap items-center justify-between py-0">
+            <div className="sm:mx-[15%] max-w-screen-xl flex flex-wrap items-center justify-between py-0">
                 <NavBarLink href="/" 
                     sections={[[allHeadings[userLang == "en" ? "en" : "fr"]["aboutUs"], "aboutus"], [allHeadings[userLang == "en" ? "en" : "fr"]["activities"], "activities"]]}>
                 {allHeadings[userLang == "en" ? "en" : "fr"]["navbarHome"]}
