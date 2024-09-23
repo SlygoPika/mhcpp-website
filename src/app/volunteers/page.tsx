@@ -108,12 +108,12 @@ export default function Volunteers() {
               </p>
               <ul className="list-disc">
                 <li className="ml-6">
-                  {roughCalendar[userLang == "en" ? "en" : "fr"]["September"][0].split(userLang == "en" ? "Recruitment" : "Recrutement").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "Recruitment" : "Recrutement"}</span>] : item)}
+                  {roughCalendar[userLang == "en" ? "en" : "fr"]["September"][0].split(userLang == "en" ? "Recruitment" : "Recrutement").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "Recruitment" : "Recrutement"}</span>] : item)}
                 </li>
                 <li className="ml-6">
-                  {roughCalendar[userLang == "en" ? "en" : "fr"]["September"][1].split("Orientation").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{"Orientation"}</span>] : item)}
+                  {roughCalendar[userLang == "en" ? "en" : "fr"]["September"][1].split("Orientation").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{"Orientation"}</span>] : item)}
                 </li>
               </ul>
             </div>
@@ -123,8 +123,8 @@ export default function Volunteers() {
               </p>
               <ul className="list-disc">
                 <li className="ml-6">
-                  {roughCalendar[userLang == "en" ? "en" : "fr"]["October-November"][0].split(userLang == "en" ? "lessons" : "Leçons").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "lessons" : "Leçons"}</span>] : item)}
+                  {roughCalendar[userLang == "en" ? "en" : "fr"]["October-November"][0].split(userLang == "en" ? "lessons" : "Leçons").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "lessons" : "Leçons"}</span>] : item)}
                 </li>
                 <li className="ml-6">
                   {roughCalendar[userLang == "en" ? "en" : "fr"]["October-November"][1]}
@@ -136,8 +136,8 @@ export default function Volunteers() {
                 {userLang == "en" ? "December" : "Décembre"}
               </p>
               <p>
-              {roughCalendar[userLang == "en" ? "en" : "fr"]["December"][0].split(userLang == "en" ? "recital" : "Récital").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "recital" : "Récital"}</span>] : item)}
+              {roughCalendar[userLang == "en" ? "en" : "fr"]["December"][0].split(userLang == "en" ? "recital" : "Récital").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "recital" : "Récital"}</span>] : item)}
               </p>
             </div>
             <div className="bg-light-blue-50 border-l-4 border-light-blue-300 text-black p-4 w-full mb-4" role="alert">
@@ -146,12 +146,12 @@ export default function Volunteers() {
               </p>
               <ul className="list-disc">
                 <li className="ml-6">
-                  {roughCalendar[userLang == "en" ? "en" : "fr"]["January"][0].split(userLang == "en" ? "Recruitment" : "Recrutement").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "Recruitment" : "Recrutement"}</span>] : item)}
+                  {roughCalendar[userLang == "en" ? "en" : "fr"]["January"][0].split(userLang == "en" ? "Recruitment" : "Recrutement").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "Recruitment" : "Recrutement"}</span>] : item)}
                 </li>
                 <li className="ml-6">
-                {roughCalendar[userLang == "en" ? "en" : "fr"]["January"][1].split("Orientation").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{"Orientation"}</span>] : item)}
+                {roughCalendar[userLang == "en" ? "en" : "fr"]["January"][1].split("Orientation").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{"Orientation"}</span>] : item)}
                 </li>
               </ul>
             </div>
@@ -161,8 +161,8 @@ export default function Volunteers() {
               </p>
               <ul className="list-disc">
                 <li className="ml-6">
-                  {roughCalendar[userLang == "en" ? "en" : "fr"]["February-March"][0].split(userLang == "en" ? "lessons" : "Leçons").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "lessons" : "Leçons"}</span>] : item)}
+                  {roughCalendar[userLang == "en" ? "en" : "fr"]["February-March"][0].split(userLang == "en" ? "lessons" : "Leçons").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "lessons" : "Leçons"}</span>] : item)}
                 </li>
                 <li className="ml-6">
                   {roughCalendar[userLang == "en" ? "en" : "fr"]["February-March"][1]}
@@ -174,8 +174,8 @@ export default function Volunteers() {
                 {userLang == "en" ? "April" : "Avril"}
               </p>
               <p>
-              {roughCalendar[userLang == "en" ? "en" : "fr"]["April"][0].split(userLang == "en" ? "recital" : "Récital").map((item: string, index: number) => 
-                    (index == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "recital" : "Récital"}</span>] : item)}
+              {roughCalendar[userLang == "en" ? "en" : "fr"]["April"][0].split(userLang == "en" ? "recital" : "Récital").map((item: string, key: number) => 
+                    (key == 0) ? [item, <span className="text-logored font-bold">{userLang == "en" ? "recital" : "Récital"}</span>] : item)}
               </p>
             </div>
           </div>
