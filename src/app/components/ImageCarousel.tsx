@@ -64,7 +64,14 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
       )}>
       {images.map((image, index) => (
         <div key={index} className="h-full flex flex-row justify-around">
-            <Image loader={() => image} src={image} width={500} height={500} alt={"Couldn't find " + image} layout="intrinsic"/>
+            <Image 
+            loader={() => image} 
+            src={image} 
+            width={500} 
+            height={500} 
+            alt={"Couldn't find " + image} 
+            priority={true}
+            layout="intrinsic"/>
             {/* <img className="h-full" src={image} key={index}/> */}
         </div>
       ))}
