@@ -251,6 +251,7 @@ level3TextFR =
 
 // -------------------------------------- LINKS/URLs & OTHER VARIABLES --------------------------------------
 const instagramLink         = "https://www.instagram.com/montrealheartofthecitypiano/";
+const SSMUInstagramLink     = "https://www.instagram.com/ssmu.mcgill/";
 const facebookLink          = "https://www.facebook.com/montrealheartofthecity/";
 const youtubeChannelLink    = "https://www.youtube.com/@montrealheartofthecitypian6067";
 const linkedinLink          = "https://www.linkedin.com/company/montreal-heart-of-the-city-piano-program/";
