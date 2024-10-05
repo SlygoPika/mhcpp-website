@@ -2,6 +2,7 @@
 import React, { FunctionComponent } from "react";
 import { Carousel } from "@material-tailwind/react";
 import VideoEmbed from "../../VideoEmbed";
+import { Suspense } from "react";
  
 type VideoCarouselProps = {
   embedLinks: string[];
@@ -12,7 +13,9 @@ const VideoCarousel : FunctionComponent<VideoCarouselProps> = ({embedLinks}) => 
     
     <Carousel className="rounded-xl my-2" placeholder="Youtube video playlist">
       {embedLinks.map((link, index) => (
-        <VideoEmbed link={link} key={index}/>
+        <Suspense key={index} fallback={<div>Loading...</div>}>
+          <VideoEmbed link={link} key={index}/>
+        </Suspense>
       ))}
     </Carousel>
   );

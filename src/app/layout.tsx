@@ -5,8 +5,9 @@ import "./globals.css";
 
 import NavBar from "./components/navbar/NavBar";
 import Footer from "./components/footer/Footer";
+import { GetBrowserLanguage } from "@/Language";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://montrealhcpp.ca'),
@@ -29,12 +30,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const lang = GetBrowserLanguage();
+
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <NavBar />
+    <html lang={lang}>
+      <body className={font.className}>
+        <NavBar lang={lang}/>
         {children}
-        <Footer />
+        <Footer lang={lang}/>
         <Analytics />
       </body>
     </html>

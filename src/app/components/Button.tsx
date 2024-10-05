@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React, { FunctionComponent } from "react";
 
 type ButtonProps = {

@@ -1,23 +1,13 @@
-"use client"
-import { useState, useEffect } from "react";
 import SocialIcon from "./SocialIcon";
 import { allLinks, allHeadings } from "@/Config";
 
-const Footer = () => {
-    const [userLang, setUserLang] = useState("en");
-    useEffect(() => {
-    if (navigator.language.includes("fr"))
-      {
-          setUserLang("fr");
-      }
-    }, []);
-
+const Footer = ({lang} : {lang : string}) => {
     const dimension = 50;
     return (
         <div className="bg-gradient-to-r from-logored/50 to-orange-900/50 absolute left-0 right-0 z-10">
             <div className="mx-[5%] sm:mx-[25%] max-w-screen-xl flex flex-wrap items-center justify-around py-2">
                 <p className="text-lightred py-3 text-xl font-medium text-center">
-                    {allHeadings[userLang == "en" ? "en" : "fr"]["footerFollow"]}
+                    {allHeadings[lang == "en" ? "en" : "fr"]["footerFollow"]}
                 </p>
                 <div className="flex w-2/3 justify-around">
                 <SocialIcon link={allLinks["youtube"]}>

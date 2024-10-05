@@ -1,15 +1,15 @@
 import { headers } from "next/headers";
 
+type BrowserLanguage = 'en' | 'fr';
+
 function GetBrowserLanguage() {
     const acceptLanguage = headers().get('accept-language');
-    let browserLanguage = acceptLanguage?.split(',')[0] || 'en'; // Default to 'en'
+    let lang = acceptLanguage?.split(',')[0] || 'en'; // Default to 'en'
+    let browserLanguage: BrowserLanguage = 'en';
 
-    if (browserLanguage.includes('fr'))
+    if (lang.includes('fr'))
     {
         browserLanguage = 'fr';
-    } else
-    {
-        browserLanguage = 'en';
     }
 
     return browserLanguage;

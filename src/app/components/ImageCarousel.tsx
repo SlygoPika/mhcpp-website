@@ -72,7 +72,6 @@ const ImageCarousel : FunctionComponent<ImageCarouselProps> = ({images}) => {
             alt={"Couldn't find " + image} 
             priority={true}
             layout="intrinsic"/>
-            {/* <img className="h-full" src={image} key={index}/> */}
         </div>
       ))}
     </Carousel>

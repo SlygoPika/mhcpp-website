@@ -3,9 +3,9 @@ import {
     Card,
     CardHeader,
     CardBody,
-    Typography,
   } from "@material-tailwind/react";
 import React, { FunctionComponent } from "react";
+import Image from "next/image";
 
 type ActivityCardProps = {
     title: string;
@@ -22,18 +22,17 @@ const ActivityCard : FunctionComponent<ActivityCardProps> = ({title, description
           color="transparent"
           className="m-0 rounded-none"
         >
-          <img
+          <Image
             src={image}
             alt={title}
+            width={400}
+            height={300}
           />
         </CardHeader>
         <CardBody placeholder={<></>}>
           <p className="text-xl text-logored font-semibold mb-3">
             {title}
           </p>
-          {/* <Typography placeholder={<></>} variant="lead" color="gray" className="mt-3 font-normal">
-            {description}
-          </Typography> */}
           <p className="text-black">
             {description}
           </p>
