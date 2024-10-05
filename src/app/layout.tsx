@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/react"
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -9,7 +9,14 @@ import Footer from "./components/footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MHCPP",
+  metadataBase: new URL('https://montrealhcpp.ca'),
+  title: {
+    template: "%s | MHCPP",
+    default: "MHCPP",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   description: "Montréal Heart of the City Piano Program. A program that provides free piano lessons to children in need.",
   icons: {
     icon: "/Logo_Transparent.png",

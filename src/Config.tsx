@@ -419,4 +419,18 @@ let allText = {
     }
 }
 
+// const getBrowserLang = () => {
+//     let lang = "en";
+//     if (typeof window !== "undefined") {
+//         lang = window.navigator.languages[0];
+
+//         if (lang.includes("fr")) {
+//             lang = "fr";
+//         } else {
+//             lang = "en";
+//         }
+//     }
+//     return lang;
+// };
+
 export { allText, allHeadings, allLinks, roughCalendar, level1EmbedsEN, level2EmbedsEN, level3EmbedsEN, level1EmbedsFR, level2EmbedsFR, level3EmbedsFR };
