@@ -7,7 +7,7 @@ export async function generateMetadata() {
   let title = 'Home | MHCPP';
   if (browserLanguage.includes('fr'))
   {
-    title = 'Acceuil | MHCPP';
+    title = 'Accueil | MHCPP';
   }
 
   return {
