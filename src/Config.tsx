@@ -15,6 +15,9 @@ let heading_activitiesNightFR = "Soirée des activités";
 let heading_semesterRecitalEN = "End-of-Semester Recitals";
 let heading_semesterRecitalFR = "Récitals de fin de session";
 
+let heading_sponsorsEN       = "Our Sponsors";
+let heading_sponsorsFR       = "Nos Sponsors";
+
 // Parents
 let heading_parentsEN       = "To Parents";
 let heading_parentsFR       = "Aux Parents";
@@ -81,8 +84,8 @@ let heading_footerFollowFR        = "Suivez-nous";
 
 // -------------------------------------- TEXT VARIABLES TO BE MODIFIED --------------------------------------
 // Home
-let aboutUsEN               : string;
-let aboutUsFR               : string;
+let aboutUsEN               : string[];
+let aboutUsFR               : string[];
 
 let activitiesNightEN       : string;
 let activitiesNightFR       : string;
@@ -131,10 +134,16 @@ let level3TextFR            : string;
 
 // Home
 aboutUsEN =
-"The Montreal Heart of the City Piano Program (MHCPP) is a McGill student club dedicated to making piano education accessible to children in the Montreal community, regardless of their financial background. Our mission is to cultivate an appreciation for music by introducing students to various musical styles and developing their musicianship. Through weekly lessons, our volunteers teach not only piano, but also build confidence and inspire a love for music. At our biannual recitals, students have the opportunity to showcase their progress, allowing parents and teachers to witness first-hand their musical development."
-aboutUsFR =
-"Le Programme de piano au cœur de la ville Montréal est un club étudiant de McGill dédié à rendre l’éducation musicale accessible aux jeunes étudiants de Montréal, peu importe le contexte financier. Notre mission est de répandre l’amour pour la musique et la culture musicale en introduisant les étudiants au piano au travers plusieurs genres, développant leur musicalité. Au cours des leçons hebdomadaires, nos enseignants volontaires n’enseignent pas que le piano, mais ils renforcent la confiance des étudiants et inspirent un amour perpétuel pour la musique. À nos récitals semestriels, les étudiant ont l’opportunité de démontrer leur progrès afin que les parents et enseignants puissent témoigner directement de leur développement musical."
+[
+"Music is an integral factor of academic education, and a wonderful outlet for self-expression and creativity. Learning music at a young age ignites cognitive, social, and emotional development in children; however, many primary schools do not have the resources to supply all of their students with a personalized, hands-on music education. A 2010 survey conducted by Hill Strategies Research reveals that only 10% of all music opportunities offered in Canadian elementary schools involve individual lessons. A more personal, more interactive, one-on-one educational experience is invaluable, especially when it comes to cultivating the skills and comprehension necessary to play and create music. The Montreal Heart of the City Piano Program (MHCPP) is a McGill student club dedicated to making individual lessons more accessible to children. We provide free piano lessons to elementary schools in underprivileged areas who might not have the financial capacity to seek lessons outside of school. Our mission is to cultivate an appreciation for music by working closely with students to introduce them to various musical styles and develop their musicianship. Through weekly lessons, which involve concentrated exercises and practice, students are prepared to perform at our biannual recitals, allowing their teachers and parents to witness first-hand their musical development.",
+"Our volunteer piano teachers are selected from the McGill student body and the greater Montreal area. They dedicate their time and knowledge to structuring and customizing lessons for their assigned students. Their goal is not only to teach piano, but also to build confidence and inspire a love for music. Our program also allows strong connections to blossom between mentor and mentee, providing a rewarding experience for our teachers and an unforgettable learning opportunity for our students that they can carry with them for the rest of their lives."
+]
 
+aboutUsFR =
+[
+"La musique est une partie essentielle de l'enseignement scolaire et constitue un formidable moyen d'expression et de créativité. L'apprentissage de la musique à un jeune âge favorise le développement cognitif, social et émotionnel des enfants. Cependant, de nombreuses écoles primaires ne disposent pas des ressources nécessaires pour offrir à tous leurs élèves une éducation musicale personnalisée et pratique. Une étude menée en 2010 par Hill Strategies Research révèle que seulement 10% des programmes d'apprentissage de musique offerts dans les écoles primaires canadiennes comprennent des leçons individuelles. Une expérience éducative personnelle, interactive et individuelle est indispensable lorsqu'il s'agit de cultiver les compétences et la compréhension nécessaires pour jouer et créer de la musique. Le Programme de piano au cœur de la ville Montréal est un club étudiant de McGill dédié à rendre l’éducation musicale accessible aux jeunes étudiants de Montréal, peu importe le contexte financier. Notre mission est de répandre l’amour pour la musique et la culture musicale en introduisant les étudiants au piano au travers plusieurs genres, développant leur musicalité. Au cours des leçons hebdomadaires, nos enseignants volontaires n’enseignent pas que le piano, mais ils renforcent la confiance des étudiants et inspirent un amour perpétuel pour la musique. À nos récitals semestriels, les étudiant ont l’opportunité de démontrer leur progrès afin que les parents et enseignants puissent témoigner directement de leur développement musical." 
+, "Nos professeurs de piano bénévoles sont choisis parmi les étudiants de McGill et du grand Montréal. Ils consacrent leur temps et leurs connaissances à structurer et à personnaliser les leçons pour leurs étudiants. Leur objectif n'est pas seulement d'enseigner le piano, mais aussi de développer la confiance en soi et d'inspirer l'amour de la musique. Notre programme permet également d’établir des liens solides entre le mentor et l’étudiant, ce qui constitue une expérience enrichissante pour nos professeurs et une occasion d'apprentissage inoubliable pour nos élèves."
+]
 activitiesNightEN =
 "Activities Night is the day where the staff team recruits and meets new volunteers. It occurs at the beginning of every semester and it is the best place to find out about us and ask questions. Join us and meet the staff team there! Learn more about it on the SSMU instagram."
 activitiesNightFR =
@@ -168,9 +177,9 @@ contactUsParentsFR =
 
 // Volunteer
 whyVolunteerEN =
-"Volunteering with MHCPP allows you to share your love of music with children who might not otherwise have access to piano lessons. We work with both English and French elementary schools and finance transportation to and from the schools, making it easy for you to get involved. By teaching piano weekly, you'll help students build confidence and inspire a lifelong appreciation for music."
+"Music education is beneficial to improving memory, dexterity, and nurturing the soul, both for the student and for the teacher. Volunteering with MHCPP allows you to share your love of music with children who might not otherwise have access to piano lessons, and help foster these skills and benefits within the younger generation. We work with both English and French elementary schools and finance transportation to and from the schools, making it easy for you to get involved. By teaching piano weekly, you'll help students build confidence and inspire a lifelong appreciation for music."
 whyVolunteerFR =
-"Être bénévole à MHCPP est une opportunité de partager votre créativité et votre amour pour la musique avec des jeunes étudiants qui n’auraient pas nécessairement cette chance autrement. Nous collaborons avec des écoles primaires françaises et anglaises et nous finançons le transport pour aller et revenir des écoles afin de faciliter votre participation. En enseignant le piano, vous inspirez les étudiants à développer une passion musicale qui pourrait changer le cours de leur vie."
+"L'éducation musicale porte des avantages au développement de la mémoire, la dextérité et nourrit l'âme, tant pour l'élève que pour le professeur. Être bénévole à MHCPP est une opportunité de partager votre créativité et votre amour pour la musique avec des jeunes étudiants qui n’auraient pas nécessairement cette chance autrement. Nous collaborons avec des écoles primaires françaises et anglaises et nous finançons le transport pour aller et revenir des écoles afin de faciliter votre participation. En enseignant le piano, vous inspirez les étudiants à développer une passion musicale qui pourrait changer le cours de leur vie."
 
 becomeTeacherEN = 
 "Interested in sharing your passion for music and making a difference in the lives of young students? Keep an eye out for our volunteer application form, which is released on our website and Instagram at the beginning of each semester. In the meantime, you can check out our rough year calendar below to get a feel for the important dates of a teaching semester."
@@ -313,6 +322,26 @@ const level3EmbedsFR : string[] = [
     "https://www.youtube.com/embed/ERdxgmaJYSQ?si=v01pa8tmHmb6XoLk"
 ];
 
+const sponsors = 
+{
+    "en": [
+        {
+            "name": "Spine Together",
+            "logo": "SpineTogetherLogo.png",
+            "link": "https://spinetogether.com/",
+            "description": ""
+        }
+    ],
+    "fr": [
+        {
+            "name": "Spine Together",
+            "logo": "SpineTogetherLogo.png",
+            "link": "https://spinetogether.com/",
+            "description": ""
+        }
+    ]
+}
+
 // ------------- Not to be modified below this line -------------
 
 let allLinks = {
@@ -333,6 +362,7 @@ let allHeadings = {
         "activities": heading_activitiesEN,
         "activitiesNight": heading_activitiesNightEN,
         "semesterRecital": heading_semesterRecitalEN,
+        "sponsors": heading_sponsorsEN,
         "parents": heading_parentsEN,
         "resources": heading_resourcesEN,
         "registration": heading_registrationEN,
@@ -362,6 +392,7 @@ let allHeadings = {
         "activities": heading_activitiesFR,
         "activitiesNight": heading_activitiesNightFR,
         "semesterRecital": heading_semesterRecitalFR,
+        "sponsors": heading_sponsorsFR,
         "parents": heading_parentsFR,
         "resources": heading_resourcesFR,
         "registration": heading_registrationFR,
@@ -419,18 +450,4 @@ let allText = {
     }
 }
 
-// const getBrowserLang = () => {
-//     let lang = "en";
-//     if (typeof window !== "undefined") {
-//         lang = window.navigator.languages[0];
-
-//         if (lang.includes("fr")) {
-//             lang = "fr";
-//         } else {
-//             lang = "en";
-//         }
-//     }
-//     return lang;
-// };
-
-export { allText, allHeadings, allLinks, roughCalendar, level1EmbedsEN, level2EmbedsEN, level3EmbedsEN, level1EmbedsFR, level2EmbedsFR, level3EmbedsFR };
+export { allText, allHeadings, allLinks, roughCalendar, sponsors, level1EmbedsEN, level2EmbedsEN, level3EmbedsEN, level1EmbedsFR, level2EmbedsFR, level3EmbedsFR };

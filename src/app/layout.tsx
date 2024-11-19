@@ -34,7 +34,7 @@ export default function RootLayout({
   const lang = GetBrowserLanguage();
 
   return (
-    <html lang={lang}>
+    <html className="" lang={lang}>
       <body className={font.className}>
         <NavBar lang={lang}/>
         {children}

@@ -12,7 +12,16 @@ const About : FunctionComponent<AboutUsProps> = ({lang}) => {
         {allHeadings[lang == "en" ? "en" : "fr"]["aboutUs"]}
       </h1>
       <p>
-        {allText[lang == "en" ? "en" : "fr"]["aboutUs"]}
+        {
+        allText[lang == "en" ? "en" : "fr"]["aboutUs"].map((paragraph: string, index: number) => {
+          return (
+            <span key={index}>
+              {paragraph}
+              <br /> <br />
+            </span>
+          );
+        })
+        }
       </p>
     </div>
   );

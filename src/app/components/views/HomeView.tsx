@@ -5,6 +5,7 @@ import About from "../subviews/home/About";
 import Button from "../Button";
 import Activities from "../subviews/home/Activities";
 import TeamPicture from "../TeamPicture";
+import Sponsors from "../subviews/home/Sponsors";
 
 import { allLinks } from "@/Config";
 
@@ -40,6 +41,10 @@ export default function HomeView({lang} : {lang: string}) {
       <div className="mx-[10%] sm:mx-[20%] my-24">
         <div id="activities"></div>
         <Activities lang={lang}/>
+      </div>
+      <div className="mx-[10%] sm:mx-[20%] my-24">
+        <div id="sponsors"></div>
+        <Sponsors lang={lang}/>
       </div>
     </main>
   );
