@@ -264,7 +264,7 @@ const SSMUInstagramLink     = "https://www.instagram.com/ssmu.mcgill/";
 const facebookLink          = "https://www.facebook.com/montrealheartofthecity/";
 const youtubeChannelLink    = "https://www.youtube.com/@montrealheartofthecitypian6067";
 const linkedinLink          = "https://www.linkedin.com/company/montreal-heart-of-the-city-piano-program/";
-const volunteerApplication  = "https://docs.google.com/forms/d/e/1FAIpQLSdkhiBbFsQUPPhuMqshDQOwBzOuY2CMR93hIyvSjxkMA-Z1Pw/viewform?usp=share_link";
+const volunteerApplication  = "https://docs.google.com/forms/d/e/1FAIpQLSdiYhyc7UawNJES7wCmwdU3VOvostzpKITzYSrYZTuYYHSubw/viewform?usp=dialog";
 const emailContact          = "montrealhcpp@gmail.com";
 const emailFinance          = "mhcpp.finance@gmail.com";
 
